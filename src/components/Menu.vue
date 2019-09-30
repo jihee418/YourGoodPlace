@@ -83,6 +83,9 @@ export default {
                         { name: "서브메뉴1", url: "/product" },
                         { name: "서브메뉴2", url: "/product/storefarm" }
                     ]
+                },
+                {
+                    name: "jiheeMain", url:"/jihee/main"
                 }
             ]
         };
