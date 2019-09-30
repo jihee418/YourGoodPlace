@@ -76,14 +76,14 @@ export default {
             version: env.VERSION,
             menuList: [
                 { name: "홈", url: "/", icon: "home icon" },
-                { name: "메뉴1", url: "/product", icon: "home icon" }
-                // {
-                //     name: "메뉴1",
-                //     subMenuList: [
-                //         { name: "서브메뉴1", url: "/product" },
-                //         { name: "서브메뉴2", url: "/product/storefarm" }
-                //     ]
-                // }
+                { name: "메뉴1", url: "/product", icon: "home icon" },
+                {
+                    name: "메뉴1",
+                    subMenuList: [
+                        { name: "서브메뉴1", url: "/product" },
+                        { name: "서브메뉴2", url: "/product/storefarm" }
+                    ]
+                }
             ]
         };
     },
@@ -106,6 +106,9 @@ export default {
 <style scoped>
 .menuWrap > .ui.menu {
     background-color: #fff;
+}
+.ui.inverted.menu > .item {
+    border-bottom: solid 1px #e7e7e7;
 }
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui),
